@@ -1,0 +1,137 @@
+<div class="container-fluid">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+  <ngb-carousel class="carousel-inner" *ngIf="productImages">
+    <!-- <div class="carousel" > -->
+    <ng-template
+      class="carousel-image"
+      *ngFor="let items of productImages"
+      ngbSlide
+    >
+      <div class="picsum-img-wrapper">
+        <a routerLink="/product-detail/{{items.id}}"> <img
+          class="homeimage"
+          src="{{ items.image }}"
+          alt="Random first slide"
+        />
+      </a></div>
+      <div class="carousel-caption">
+        <h3>{{ items.name }}</h3>
+        <p>{{ items.description }}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  
+  <!-- <div class="product-list-wrapper">
+    <div class="row">
+      <h2>trendy Product</h2>
+      <div class="col-sm-3 productList" *ngFor="let item of productList">
+        <div class="product-items" style="margin: auto">
+          
+          <img class="product-image" src="{{ item.image }}"> 
+      
+      </div>
+        <div class="product-details">
+          
+          <h6 class="name-head">{{ item.name }}</h6>
+          <div class="product-price">
+            <h6>{{ item.price }}</h6>
+          </div>
+          <div class="product-price">
+            <h6>{{ item.color }}</h6>
+          </div>
+          <div class="product-price">
+            <h6>{{ item.category }}</h6>
+          </div>
+         
+        </div>
+        <div class="product-footer">
+          <div class="viewDetail">
+          <a routerLink="/product-detail/{{item.id}}">view Details</a>
+        </div>
+          <div class="addToCart">
+          <a href="">add Cart</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="container-fluid">
+
+  <!-- PRODUCT LIST -->
+  <div class="product-list-wrapper">
+    <div class="row">
+      <h2 class="text-center mb-4">Trendy Products</h2>
+
+      <div
+        class="col-sm-3 productList"
+        *ngFor="let item of productList"
+      >
+        <div class="product-card">
+
+          <!-- IMAGE -->
+          <img
+            class="product-image"
+            [src]="item.image"
+            alt="product"
+          />
+
+          <!-- DETAILS -->
+          <div class="product-details">
+            <h6 class="name-head">{{ item.name }}</h6>
+            <h6>{{ item.price }}</h6>
+            <h6>{{ item.color }}</h6>
+            <h6>{{ item.category }}</h6>
+          </div>
+
+          <!-- FOOTER -->
+          <div class="product-footer">
+            <a routerLink="/product-detail/{{item.id}}">
+              View Details
+            </a>
+            <a href="#">
+              Add Cart
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<div class="footer">
+  <ul>
+    <li>
+      <a href="">Become a Seller</a>
+    </li>
+    <li>
+      <a href="">Polices</a>
+    </li>
+    <li>
+      <a href="">Terms and Conditions</a>
+    </li>
+    <li>
+      <a href="">Help Center</a>
+    </li>
+    <li>
+      <a href="">News</a>
+    </li>
+    <li>
+      <a href="">Facebook</a>
+    </li>
+    <li>
+      <a href="">Youtube</a>
+    </li>
+    <li>
+      <a href="">Sitemap</a>
+    </li>
+    <li>
+      <a href="">FAQ</a>
+    </li>
+  </ul>
+  <p>© 2026 E-comme Project</p>
+</div>

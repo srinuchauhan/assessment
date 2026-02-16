@@ -1,0 +1,62 @@
+<div class="addproduct-container">
+  <div class="addproductHeading">
+    <h1 class="product-heading">{{updateProduct}}</h1>
+    <form
+      #addproduct="ngForm"
+      (ngSubmit)="update(addproduct.value)"
+      class="signup-form"
+    >
+      <input
+        type="text"
+        placeholder="enter product name"
+        ngModel="{{updated?.name}}"
+        name="name"
+        class="signup-form"
+      />
+      <input
+        type="text"
+        placeholder="enter product price"
+        ngModel="{{updated?.price}}"
+        name="price"
+        class="signup-form"
+      />
+      <input
+        type="text"
+        placeholder="enter product Discount"
+        ngModel="{{updated?.discount}}"
+        name="discount"
+        class="signup-form"
+      />
+      <input
+        type="text"
+        placeholder="enter product category"
+        ngModel="{{updated?.category}}"
+        name="category"
+        class="signup-form"
+      />
+      <input
+        type="textarea"
+        placeholder="enter product color"
+        ngModel="{{updated?.color}}"
+        name="color"
+        class="signup-form"
+      />
+      <textarea
+        id="textarea"
+        placeholder="enter product description"
+        ngModel="{{updated?.description}}"
+        name="description"
+        class="signup-form"
+      ></textarea>
+      <input
+        type="url"
+        placeholder="enter product image url"
+        ngModel="{{updated?.image}}"
+        name="image"
+        class="signup-form"
+      />
+      <button class="form-button">update product</button>
+      <!-- <div>{{ sellerSignUp.value | json}}</div>-->
+    </form>
+  </div>
+</div>

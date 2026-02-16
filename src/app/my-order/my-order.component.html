@@ -1,0 +1,48 @@
+<div class="myorder">
+    <div class="orderstatus">
+      <h1>My Orders</h1>
+  <div class="row">
+    <div class="col-sm-2">
+      <span>order</span>
+    </div>
+    <div class="col-sm-2">
+      <span>orderId</span>
+    </div>
+    <div class="col-sm-2">
+      <span>price</span>
+    </div>
+    <div class="col-sm-2">
+      <span>status</span>
+    </div>
+    <div class="col-sm-2">
+      <span> action</span>
+    </div>
+    <!-- <div class="col-sm-2">
+            <span>orderId</span>
+        </div> -->
+  </div>
+</div>
+  <div class="row" *ngFor="let order of orderData">
+    <div class="orderDetails" >
+      <div class="col-sm-2">
+        <img
+          class="track"
+          src="https://www.clipartmax.com/png/small/210-2106541_track-my-order-beach-volleyball.png"
+          alt="Track My Order - Beach Volleyball @clipartmax.com"
+        />
+      </div>
+      <div class="col-sm-2">
+        <span>{{order.id}}</span>
+      </div>
+      <div class="col-sm-2">
+        <span>{{order.totalPrice}}</span>
+      </div>
+      <div class="col-sm-2">
+        <span>Inprogress</span>
+      </div>
+      <div class="col-sm-2">
+        <span> <button (click)="cancelOrder(order.id)">cancel Order</button></span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="addproduct-container">
+  <div class="addproductHeading">
+    <h2 class="uploadproduct-detail">upload the product details or<a (click)="manual()"> Enter Manually</a></h2>
+  <input type="file"    multiple class="productFile">
+    <h1 class="product-heading">{{ addedSuccessfully }}</h1>
+    <form *ngIf="showManual"
+      #addproduct="ngForm" 
+      (ngSubmit)="product(addproduct.value)"
+      class="signup-form"
+    >
+      <input
+        type="text"
+        placeholder="enter product name"
+        ngModel
+        name="name"
+        class="signup-form"
+      />
+      <input
+        type="text"
+        placeholder="enter product price"
+        ngModel
+        name="price"
+        class="signup-form"
+      />
+      <input
+      type="text"
+      placeholder="enter product Discount"
+      ngModel
+      name="Discount"
+      class="signup-form"
+    />
+      <input
+        type="text"
+        placeholder="enter product category"
+        ngModel
+        name="category"
+        class="signup-form"
+      />
+      <input
+        type="textarea"
+        placeholder="enter product color"
+        ngModel
+        name="color"
+        class="signup-form"
+      />
+      <textarea
+        id="textarea"
+        placeholder="enter product description"
+        ngModel
+        name="description"
+        class="signup-form"
+      ></textarea>
+      <input
+        type="url"
+        placeholder="enter product image url"
+        ngModel
+        name="image"
+        class="signup-form"
+      />
+      <button class="form-button">signup</button>
+      <!-- <div>{{ sellerSignUp.value | json}}</div>-->
+    </form>
+  </div>
+</div>

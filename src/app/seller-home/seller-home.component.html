@@ -1,0 +1,88 @@
+<!-- <div class="productList">
+  <h1>{{ productdelete }}</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>image</th>
+        <th>name</th>
+        <th>price</th>
+        <th>category</th>
+        <th>color</th>
+        <th>description</th>
+        <th>Discount</th>
+        <th>action</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let items of productList">
+      <td>
+        <img style="height: 100px; width: 100px" src="{{ items.image }}" />
+      </td>
+      <td>{{ items.name }}</td>
+      <td>{{ items.price }}</td>
+      <td>{{ items.category }}</td>
+      <td>{{ items.color }}</td>
+      <td>{{ items.description }}</td>
+      <td>{{items.discount}}</td>
+      <td>
+        <fa-icon (click)="delete(items.id)" [icon]="icon"></fa-icon>
+       <a routerLink="/update-product/{{items.id}}"><fa-icon  [icon]="Editicon"></fa-icon></a> 
+      </td>
+    </tr>
+    <tbody></tbody>
+  </table>
+</div> -->
+
+
+<div class="productList">
+  <h2 class="page-title">Product Management</h2>
+
+  <div class="table-wrapper">
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Color</th>
+          <th>Description</th>
+          <th>Discount (%)</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let items of productList">
+          <td>
+            <img class="product-img" [src]="items.image" />
+          </td>
+          <td>{{ items.name }}</td>
+          <td>₹ {{ items.price }}</td>
+          <td>{{ items.category }}</td>
+          <td>{{ items.color }}</td>
+          <td>{{ items.description }}</td>
+          <td>
+            <span class="discount-badge">
+              {{ items.discount }}%
+            </span>
+          </td>
+          <td class="action-icons">
+            <fa-icon
+              class="delete-icon"
+              (click)="delete(items.id)"
+              [icon]="icon">
+            </fa-icon>
+
+            <a routerLink="/update-product/{{items.id}}">
+              <fa-icon
+                class="edit-icon"
+                [icon]="Editicon">
+              </fa-icon>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
