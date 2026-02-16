@@ -1,26 +1,11 @@
-/* table{
-    text-align: left;
-    color:black;
-    width: 100px;
-    border-collapse: collapse;
-    margin: auto;
-}
-table td,table th{
-    border: 1px solid black;
-    padding: 10px;
-}
-#edit{
-    margin-left: .8rem;
-} */
 
-/* PAGE CONTAINER */
 .productList {
   padding: 30px;
   background-color: #f5f7fa;
   min-height: 100vh;
 }
 
-/* TITLE */
+
 .page-title {
   text-align: center;
   margin-bottom: 25px;
@@ -28,7 +13,7 @@ table td,table th{
   font-weight: 600;
 }
 
-/* TABLE WRAPPER */
+
 .table-wrapper {
   overflow-x: auto;
   background-color: #fff;
@@ -36,14 +21,14 @@ table td,table th{
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* TABLE */
+
 .product-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 14px;
 }
 
-/* HEADER */
+
 .product-table thead {
   background-color: #1976d2;
   color: #fff;
@@ -56,19 +41,16 @@ table td,table th{
   white-space: nowrap;
 }
 
-/* BODY */
 .product-table td {
   padding: 12px;
   border-bottom: 1px solid #e0e0e0;
   vertical-align: middle;
 }
 
-/* ROW HOVER */
 .product-table tbody tr:hover {
   background-color: #f1f5ff;
 }
 
-/* PRODUCT IMAGE */
 .product-img {
   width: 80px;
   height: 80px;
@@ -78,7 +60,7 @@ table td,table th{
   background-color: #fff;
 }
 
-/* DISCOUNT BADGE */
+
 .discount-badge {
   background-color: #e53935;
   color: #fff;
@@ -88,7 +70,6 @@ table td,table th{
   font-weight: 500;
 }
 
-/* ACTION ICONS */
 .action-icons {
   display: flex;
   gap: 12px;
@@ -115,7 +96,6 @@ table td,table th{
   color: #b71c1c;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .product-table th,
   .product-table td {

@@ -1,4 +1,4 @@
-/* ===== PAGE LAYOUT ===== */
+
 .product-detail {
   margin: 4rem auto;
   max-width: 1100px;
@@ -8,7 +8,7 @@
   padding: 40px;
 }
 
-/* ===== IMAGE SECTION ===== */
+
 .product-image {
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@
   transform: scale(1.05);
 }
 
-/* ===== DETAILS SECTION ===== */
+
 .col-sm-6 {
   padding-left: 30px;
 }
@@ -45,7 +45,6 @@
   margin-bottom: 20px;
 }
 
-/* ===== META INFO ===== */
 .col-sm-6 h4 {
   font-size: 15px;
   font-weight: 500;
@@ -57,7 +56,7 @@
   color: #212121;
 }
 
-/* ===== BUTTONS ===== */
+
 .addtoCart,
 .RemovetoCart,
 .buyNow {
@@ -71,7 +70,6 @@
   transition: all 0.3s ease;
 }
 
-/* Add to Cart */
 .addtoCart {
   background-color: #fff;
   color: #6a1b9a;
@@ -83,7 +81,6 @@
   color: #fff;
 }
 
-/* Remove from Cart */
 .RemovetoCart {
   background-color: #e53935;
   color: #fff;
@@ -93,7 +90,6 @@
   background-color: #b71c1c;
 }
 
-/* Buy Now */
 .buyNow {
   background: linear-gradient(135deg, #ff9800, #ff5722);
   color: #fff;
@@ -104,7 +100,7 @@
   background: linear-gradient(135deg, #ff5722, #e64a19);
 }
 
-/* ===== QUANTITY SECTION ===== */
+
 .quanties {
   display: flex;
   align-items: center;
@@ -135,7 +131,6 @@
   border: 1px solid #ccc;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .product-detail {
     padding: 20px;

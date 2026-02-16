@@ -1,4 +1,4 @@
-/* ===== PAGE WRAPPER ===== */
+
 .cart-page {
   max-width: 1200px;
   margin: 50px auto;
@@ -11,14 +11,14 @@
   font-weight: 600;
 }
 
-/* ===== ROW LAYOUT FIX ===== */
+
 .cart-page .row {
   display: flex;
   align-items: flex-start;
   gap: 25px;
 }
 
-/* ===== LEFT: CART DETAILS ===== */
+
 .details {
   flex: 2;
   background-color: #ffffff;
@@ -27,7 +27,7 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* EACH CART ITEM */
+
 .details ul {
   display: flex;
   align-items: center;
@@ -40,7 +40,6 @@
   background-color: #fafafa;
 }
 
-/* IMAGE */
 .details .image {
   width: 90px;
   height: 90px;
@@ -50,14 +49,13 @@
   background-color: #fff;
 }
 
-/* TEXT */
+
 .details ul li span {
   font-size: 14px;
   color: #444;
   white-space: nowrap;
 }
 
-/* REMOVE BUTTON */
 .button-remove {
   background-color: #e53935;
   color: #fff;
@@ -72,7 +70,6 @@
   background-color: #b71c1c;
 }
 
-/* ===== RIGHT: SUMMARY (SIDE PANEL) ===== */
 .summary {
   flex: 1;
   position: sticky;
@@ -83,7 +80,6 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* SUMMARY TITLE */
 .summary h1 {
   text-align: center;
   font-size: 22px;
@@ -91,7 +87,7 @@
   color: #1976d2;
 }
 
-/* SUMMARY LIST */
+
 .summary ul {
   list-style: none;
   padding: 0;
@@ -111,14 +107,12 @@
   border-bottom: none;
 }
 
-/* TOTAL */
 .summary ul li h4 {
   font-size: 16px;
   margin: 0;
   color: #212121;
 }
 
-/* CHECKOUT BUTTON */
 .form-button {
   margin-top: 25px;
   width: 100%;
@@ -137,7 +131,7 @@
   transform: translateY(-2px);
 }
 
-/* ===== RESPONSIVE ===== */
+
 @media (max-width: 768px) {
   .cart-page .row {
     flex-direction: column;
